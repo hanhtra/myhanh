@@ -9,22 +9,21 @@
 <body>
     <script>
         let primeStr = '';
-        for (let i = 1; i <=10000; i +=2){
+        for (let i = 1; i <= 10000; i += 2){
             if (isprime(i)){
                 primeStr += i + '';
             }
         }
         document.write(primeStr);
-        function isprime(number){
-            number = parseInt(number);
-            let prime = true;
-            for(let i = 2; i<= Math.sqrt(nmber); i++){
+        function isPrime(number) {
+            let isPrime = true;
+            for(let i = 2; i <= Math.sqrt(number); i++){
                 if (number % i == 0){
-                prime = false;
+                isPrime = false;
                 break;
             }
         }
-        return isprime; 
+        return isPrime; 
     </script>
 </body>
 </html>
